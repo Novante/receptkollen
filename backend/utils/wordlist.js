@@ -1,0 +1,21 @@
+export const wordList =
+    [
+        "kinesisk soja",
+        "kycklinglårfilé",
+        "kalvfond",
+        "grädde",
+        "haricots verts",
+        "röd vinbärsgelé",
+        "gul lök",
+        "svamp",
+        "röd paprika",
+        "bacon",
+        "smör",
+        "salt",
+        "vitpeppar",
+        "vatten",
+        "kalvfond",
+        "vetemjöl",
+        "persilja",
+        "kokt ris",
+    ]
