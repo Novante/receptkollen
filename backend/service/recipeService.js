@@ -9,9 +9,9 @@ let page;
     page = await browser.newPage();
 })()
 
-const recipeController = {}
+const recipeService = {}
 
-recipeController.comparePrice = (req, res) => {
+recipeService.comparePrice = (req, res) => {
 
     let url = req.body
 
@@ -117,12 +117,12 @@ const getIngredientsFromRecept = async () => {
             if (price[j].includes('för')){
                 tempPrice = price[j].split(/\r?\n/)[1]
                 tempPrice = tempPrice.replace(/[^\d,-]/g, '')
-                // console.log(tempPrice)
+                console.log(tempPrice)
 
             } else {
                 tempPrice = price[j].split(/\r?\n/)[0]
                 tempPrice = tempPrice.replace(/[^\d,-]/g, '')
-                // console.log(tempPrice)
+                console.log(tempPrice)
             }
 
 
@@ -186,4 +186,4 @@ const convertToMetric = (filteredList) => {
 
 }
 
-export default recipeController;
+export default recipeService;

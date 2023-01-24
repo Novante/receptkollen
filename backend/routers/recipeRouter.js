@@ -1,7 +1,7 @@
 import express from "express";
-import recipeController from "../controller/recipeController.js";
+import recipeService from "../service/recipeService.js";
 const router = express.Router()
 
-router.post('/comparePrice', recipeController.comparePrice)
+router.post('/comparePrice', recipeService.comparePrice)
 
 export default router;
